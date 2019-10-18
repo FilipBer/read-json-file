@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.filipberski.readfile.model.Book;
 import com.filipberski.readfile.services.BookServices;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,9 @@ import java.io.IOException;
 
 @Component
 public class DataLoader implements CommandLineRunner {
+
+    @Value("${dataSource}")
+    private String dataSource;
 
     private final BookServices bookServices;
 
@@ -28,7 +32,9 @@ public class DataLoader implements CommandLineRunner {
     private void loadData() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        JsonNode json = objectMapper.readTree(new File("src/main/resources/static/books.json"));
+        String source = "src/main/resources/static/" + dataSource;
+
+        JsonNode json = objectMapper.readTree(new File(source));
         JsonNode jsonBooks = json.get("items");
         for (int i = 0; i < jsonBooks.size(); i++) {
             bookServices.add(readBook(jsonBooks.get(i)));
