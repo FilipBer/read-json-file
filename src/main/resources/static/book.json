@@ -1,0 +1,94 @@
+{
+  "kind": "books#volume",
+  "id": "UEdjAgAAQBAJ",
+  "etag": "/KAuiIWJuB4",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/UEdjAgAAQBAJ",
+  "volumeInfo": {
+    "title": "Java. Podstawy. Wydanie IX",
+    "authors": [
+      "Cay S. Horstmann",
+      "Gary Cornell"
+    ],
+    "publisher": "Helion",
+    "publishedDate": "2013-12-09",
+    "description": "Kolejne wydanie tej cenionej książki zostało zaktualizowane o wszystkie nowości, które pojawiły się w wersji 7 platformy Java Standard Edition. W trakcie lektury poznasz składnię języka oraz wszystkie istotne kwestie związane z programowaniem w Javie. Zrozumiesz założenia programowania obiektowego, nauczysz się korzystać z interfejsów oraz obsługiwać wyjątki. Przekonasz się również, jakie ułatwienia w tym zakresie oferuje Java 7 obsługa wielu wyjątków w ramach jednego bloku catch to tylko czubek góry lodowej.",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9788324677610"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "8324677615"
+      }
+    ],
+    "readingModes": {
+      "text": true,
+      "image": true
+    },
+    "pageCount": 864,
+    "printType": "BOOK",
+    "categories": [
+      "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.5.4.0.preview.3",
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=UEdjAgAAQBAJ&pg=PA852&dq=java&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-UEdjAgAAQBAJ"
+  },
+  "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+      "amount": 79.0,
+      "currencyCode": "PLN"
+    },
+    "retailPrice": {
+      "amount": 55.3,
+      "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&rdid=book-UEdjAgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+      {
+        "finskyOfferType": 1,
+        "listPrice": {
+          "amountInMicros": 7.9E7,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amountInMicros": 5.53E7,
+          "currencyCode": "PLN"
+        }
+      }
+    ]
+  },
+  "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-epub.acsm?id=UEdjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.pl/books/download/Java_Podstawy_Wydanie_IX-sample-pdf.acsm?id=UEdjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UEdjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+  },
+  "searchInfo": {
+    "textSnippet": "MF, 512 manifestu klasa główna, 514 sekcja główna, 512 wstawianie sekcji, 518 \u003cbr\u003e\nzmienianie zawartości, 513 MapTest.\u003cb\u003ejava\u003c/b\u003e,699 MenuFrame.\u003cb\u003ejava\u003c/b\u003e, 442 \u003cbr\u003e\nMethodTableTest.\u003cb\u003ejava\u003c/b\u003e,266 MouseComponent.\u003cb\u003ejava\u003c/b\u003e, 383 MouseFrame.\u003cb\u003ejava\u003c/b\u003e, 383 \u003cbr\u003e\nNotHelloWorld.\u003cb\u003ejava\u003c/b\u003e, 330, 534 ObjectAnalyzerTest.\u003cb\u003ejava\u003c/b\u003e,259 OptionDialogFrame.\u003cbr\u003e\n\u003cb\u003ejava\u003c/b\u003e,477 overview.html, 194 PackageTest.\u003cb\u003ejava\u003c/b\u003e, 184 PairTest1.\u003cb\u003ejava\u003c/b\u003e, 631 \u003cbr\u003e\nPairTest2.\u003cb\u003ejava\u003c/b\u003e, 634 PairTest3.\u003cb\u003ejava\u003c/b\u003e, 656 ParamTest.\u003cb\u003ejava\u003c/b\u003e, 169 PasswordChooser.\u003cbr\u003e\n\u003cb\u003ejava\u003c/b\u003e, 492 Person.\u003cb\u003ejava\u003c/b\u003e&nbsp;..."
+  }
+}

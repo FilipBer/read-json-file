@@ -1,0 +1,19 @@
+{
+  "isbn": "9781592432172",
+  "title": "A Hypervista of the Java Landscape",
+  "subtitle": "subtitle",
+  "publisher": "InfoStrategist.com",
+  "publishedDate": 123456789,
+  "description": "description",
+  "pageCount": 123,
+  "thumbnailUrl": "http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+  "language": "en",
+  "previewLink": "http://books.google.pl/books?id=7tkN1CYzn2cC&pg=PP1&dq=java&hl=&cd=1&source=gbs_api",
+  "averageRating": 3.4,
+  "authors": [
+    "Clifford Geertz"
+  ],
+  "categories": [
+    "Religion"
+  ]
+}
