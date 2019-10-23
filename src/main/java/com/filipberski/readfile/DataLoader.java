@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -49,6 +52,7 @@ public class DataLoader implements CommandLineRunner {
         String[] authorsArray;
         String[] categoriesArray;
         JsonNode categories;
+        LocalDateTime date;
 
 
         JsonNode volumeInfo = jsonBook.get("volumeInfo");
@@ -65,7 +69,12 @@ public class DataLoader implements CommandLineRunner {
             book.setPublisher(volumeInfo.get("publisher").asText());
         }
         if (volumeInfo.has("publishedDate")) {
-            book.setPublishedDate(volumeInfo.get("publishedDate").asLong());
+            if (volumeInfo.get("publishedDate").asText().contains("-")){
+                date = LocalDate.parse(volumeInfo.get("publishedDate").asText()).atStartOfDay();
+            } else {
+                date = LocalDate.parse(volumeInfo.get("publishedDate").asText() + "-01-01").atStartOfDay();
+            }
+            book.setPublishedDate(Timestamp.valueOf(date).getTime());
         }
         if (volumeInfo.has("description")) {
             book.setDescription(volumeInfo.get("description").asText());
