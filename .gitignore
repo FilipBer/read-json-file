@@ -29,4 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/home/filip/Projects/readfile/src/main/resources/static/
 *.json
