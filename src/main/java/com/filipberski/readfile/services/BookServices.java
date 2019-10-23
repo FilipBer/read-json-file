@@ -30,4 +30,24 @@ public class BookServices {
         }
         throw new ResponseStatusException(HttpStatus.NOT_FOUND);
     }
+
+    public List<Book> getByCategory (String category) {
+        List<Book> searchedBooks = new ArrayList<>();
+        String[] categories;
+        for (Book book : books) {
+            if(book.getCategories() != null) {
+                categories = book.getCategories();
+                for (String current : categories) {
+                    if (current.equals(category)) {
+                        searchedBooks.add(book);
+                        break;
+                    }
+                }
+            }
+        }
+        if (searchedBooks.size() == 0) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+        return searchedBooks;
+    }
 }

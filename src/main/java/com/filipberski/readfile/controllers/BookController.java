@@ -31,4 +31,9 @@ public class BookController {
     public ResponseEntity<Book> getBookByIsbn(@PathVariable("isbn") String isbn) throws ResponseStatusException {
         return new ResponseEntity<>(bookServices.getByIsbn(isbn), HttpStatus.OK);
     }
+
+    @GetMapping("/category/{categoryName}/books")
+    public ResponseEntity<List<Book>> getBooksByCategory (@PathVariable("categoryName") String category) throws ResponseStatusException {
+        return new ResponseEntity<>(bookServices.getByCategory(category), HttpStatus.OK);
+    }
 }

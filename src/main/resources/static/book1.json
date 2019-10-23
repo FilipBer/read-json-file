@@ -1,19 +1,99 @@
 {
-  "isbn": "9781592432172",
-  "title": "A Hypervista of the Java Landscape",
-  "subtitle": "subtitle",
-  "publisher": "InfoStrategist.com",
-  "publishedDate": 123456789,
-  "description": "description",
-  "pageCount": 123,
-  "thumbnailUrl": "http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-  "language": "en",
-  "previewLink": "http://books.google.pl/books?id=7tkN1CYzn2cC&pg=PP1&dq=java&hl=&cd=1&source=gbs_api",
-  "averageRating": 3.4,
-  "authors": [
-    "Clifford Geertz"
-  ],
-  "categories": [
-    "Religion"
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "mVNjAgAAQBAJ",
+      "etag": "hYyTNTIiaXA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mVNjAgAAQBAJ",
+      "volumeInfo": {
+        "title": "Java. Techniki zaawansowane. Wydanie IX",
+        "authors": [
+          "Cay S. Horstmann",
+          "Gary Cornell"
+        ],
+        "publisher": "Helion",
+        "publishedDate": "2013-12-09",
+        "description": "Dziewiąte wydanie bestsellerowej pozycji Java. Techniki zaawansowane zostało zaktualizowane i uzupełnione o nowinki z najnowszej wersji języka Java oznaczonej numerem 7. W trakcie lektury dowiesz się, jak wydajnie korzystać ze strumieni, wyrażeń regularnych oraz baz danych. Java 7 to całkowicie nowy, mocno rozbudowany dostęp do plików opis wszystkich niuansów znajdziesz w tej publikacji. Co jeszcze? Tworzenie aplikacji dla różnych języków i lokalizacji, zaawansowane wykorzystanie biblioteki Swing oraz dystrybucja stworzonych aplikacji. To tylko niektóre z zagadnień poruszonych w tej wyjątkowej książce, która musi się znaleźć na półce każdego programisty języka Java.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788324677658"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8324677658"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 992,
+        "printType": "BOOK",
+        "categories": [
+          "Java",
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.3.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "pl",
+        "previewLink": "http://books.google.pl/books?id=mVNjAgAAQBAJ&printsec=frontcover&dq=java&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-mVNjAgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "PL",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 119.0,
+          "currencyCode": "PLN"
+        },
+        "retailPrice": {
+          "amount": 83.3,
+          "currencyCode": "PLN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&rdid=book-mVNjAgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1.19E8,
+              "currencyCode": "PLN"
+            },
+            "retailPrice": {
+              "amountInMicros": 8.33E7,
+              "currencyCode": "PLN"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "PL",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-epub.acsm?id=mVNjAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.pl/books/download/Java_Techniki_zaawansowane_Wydanie_IX-sample-pdf.acsm?id=mVNjAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mVNjAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Dziewiąte wydanie bestsellerowej pozycji Java."
+      }
+    }
   ]
 }
