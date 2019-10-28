@@ -50,4 +50,14 @@ public class BookServices {
         }
         return searchedBooks;
     }
+
+    List<Book> getRatingBooks() {
+        List<Book> ratingBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getAverageRating() != null) {
+                ratingBooks.add(book);
+            }
+        }
+        return ratingBooks;
+    }
 }

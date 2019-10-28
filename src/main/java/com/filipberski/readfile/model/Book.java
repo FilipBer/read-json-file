@@ -1,17 +1,20 @@
 package com.filipberski.readfile.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Book {
     private String isbn;
     private String title;
     private String subtitle;
     private String publisher;
-    private long publishedDate;
+    private Long publishedDate;
     private String description;
-    private int pageCount;
+    private Integer pageCount;
     private String thumbnailUrl;
     private String language;
     private String previewLink;
-    private double averageRating;
+    private Double averageRating;
     private String[] authors;
     private String[] categories;
 
@@ -47,7 +50,7 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public long getPublishedDate() {
+    public Long getPublishedDate() {
         return publishedDate;
     }
 
@@ -63,7 +66,7 @@ public class Book {
         this.description = description;
     }
 
-    public int getPageCount() {
+    public Integer getPageCount() {
         return pageCount;
     }
 
@@ -95,7 +98,7 @@ public class Book {
         this.previewLink = previewLink;
     }
 
-    public double getAverageRating() {
+    public Double getAverageRating() {
         return averageRating;
     }
 
