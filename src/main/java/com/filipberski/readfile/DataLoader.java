@@ -3,7 +3,7 @@ package com.filipberski.readfile;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.filipberski.readfile.model.Book;
-import com.filipberski.readfile.services.BookServices;
+import com.filipberski.readfile.services.BookService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -20,10 +20,10 @@ public class DataLoader implements CommandLineRunner {
     @Value("${dataSource}")
     private String dataSource;
 
-    private final BookServices bookServices;
+    private final BookService bookService;
 
-    public DataLoader(BookServices bookServices) {
-        this.bookServices = bookServices;
+    public DataLoader(BookService bookService) {
+        this.bookService = bookService;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class DataLoader implements CommandLineRunner {
         JsonNode json = objectMapper.readTree(new File(source));
         JsonNode jsonBooks = json.get("items");
         for (int i = 0; i < jsonBooks.size(); i++) {
-            bookServices.add(readBook(jsonBooks.get(i)));
+            bookService.add(readBook(jsonBooks.get(i)));
         }
 
 

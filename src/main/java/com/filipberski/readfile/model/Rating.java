@@ -1,12 +1,12 @@
 package com.filipberski.readfile.model;
 
-public class AuthorRating {
+public class Rating {
     private String name;
     private Double ratingSum;
     private Integer numberOfRatings;
     private Double averageRating;
 
-    public AuthorRating(String name, Double ratingSum) {
+    public Rating(String name, Double ratingSum) {
         this.name = name;
         this.ratingSum = ratingSum;
         this.numberOfRatings = 1;

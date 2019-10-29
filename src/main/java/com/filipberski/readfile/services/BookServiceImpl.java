@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class BookServices {
+public class BookServiceImpl implements BookService {
 
 
     private List<Book> books = new ArrayList<>();
@@ -51,7 +51,7 @@ public class BookServices {
         return searchedBooks;
     }
 
-    List<Book> getRatingBooks() {
+    public List<Book> getRatingBooks() {
         List<Book> ratingBooks = new ArrayList<>();
         for (Book book : books) {
             if (book.getAverageRating() != null) {
